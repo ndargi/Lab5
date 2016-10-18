@@ -16,5 +16,10 @@ namespace Lab5
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //This will be for Lab5
+        }
     }
 }
