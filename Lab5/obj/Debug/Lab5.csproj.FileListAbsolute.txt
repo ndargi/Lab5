@@ -1,2 +1,10 @@
 Y:\Boston University\Senior\Software Design\Lab5\Lab5\bin\Debug\Lab5.exe.config
 \\Mac\Dropbox\Boston University\Senior\Software Design\Lab5\Lab5\bin\Debug\Lab5.exe.config
+Y:\Boston University\Senior\Software Design\Lab5\Lab5\bin\Debug\Lab5.exe
+Y:\Boston University\Senior\Software Design\Lab5\Lab5\bin\Debug\Lab5.pdb
+Y:\Boston University\Senior\Software Design\Lab5\Lab5\obj\Debug\Lab5.csprojResolveAssemblyReference.cache
+Y:\Boston University\Senior\Software Design\Lab5\Lab5\obj\Debug\Lab5.Form1.resources
+Y:\Boston University\Senior\Software Design\Lab5\Lab5\obj\Debug\Lab5.Properties.Resources.resources
+Y:\Boston University\Senior\Software Design\Lab5\Lab5\obj\Debug\Lab5.csproj.GenerateResource.Cache
+Y:\Boston University\Senior\Software Design\Lab5\Lab5\obj\Debug\Lab5.exe
+Y:\Boston University\Senior\Software Design\Lab5\Lab5\obj\Debug\Lab5.pdb
