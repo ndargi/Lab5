@@ -129,4 +129,37 @@ namespace Lab5
         }
         
     }
+    public class Text : myShape
+    {
+        Point point1;
+        Point point2;
+        SolidBrush BrushColor;
+        string mystring;
+        public Text(Point in_point1, Point in_point2, SolidBrush in_BrushColor,string in_mystring)
+        {
+            point1 = in_point1;
+            point2 = in_point2;
+            BrushColor = in_BrushColor;
+            mystring = in_mystring;
+        }
+        public override void Draw(Graphics g)
+        {
+            base.Draw(g);
+            Point placeholder = point1;
+            if (point1.X > point2.X)
+            {
+                point1.X = point2.X;
+                point2.X = placeholder.X;
+            }
+            if (point1.Y > point2.Y)
+            {
+                point1.Y = point2.Y;
+                point2.Y = placeholder.Y;
+            }
+            SizeF mysize = new SizeF(point2.X - point1.X, point2.Y - point1.Y);
+            RectangleF myrect = new RectangleF(point1, mysize);
+            Font myfont = new Font("Times New Roman", 10);
+            g.DrawString(mystring, myfont, BrushColor, myrect);
+        }
+    }
 }

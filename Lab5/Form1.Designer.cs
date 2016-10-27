@@ -36,22 +36,22 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.OutlinecheckBox = new System.Windows.Forms.CheckBox();
+            this.Fillcheckbox = new System.Windows.Forms.CheckBox();
+            this.PenWidthListBox = new System.Windows.Forms.ListBox();
+            this.FillcolorListbox = new System.Windows.Forms.ListBox();
+            this.PencolorlistBox = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Draw_Box = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox = new System.Windows.Forms.TextBox();
             this.TextradioButton = new System.Windows.Forms.RadioButton();
             this.EllipseradioButton = new System.Windows.Forms.RadioButton();
             this.RectangleradioButton = new System.Windows.Forms.RadioButton();
             this.Lineradiobutton = new System.Windows.Forms.RadioButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.label2 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.PencolorlistBox = new System.Windows.Forms.ListBox();
-            this.FillcolorListbox = new System.Windows.Forms.ListBox();
-            this.PenWidthListBox = new System.Windows.Forms.ListBox();
-            this.Fillcheckbox = new System.Windows.Forms.CheckBox();
-            this.OutlinecheckBox = new System.Windows.Forms.CheckBox();
             this.drawpanel = new System.Windows.Forms.Panel();
             this.menuStrip2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -125,6 +125,93 @@
             this.panel1.TabIndex = 2;
             this.panel1.Resize += new System.EventHandler(this.Form1_Load);
             // 
+            // OutlinecheckBox
+            // 
+            this.OutlinecheckBox.AutoSize = true;
+            this.OutlinecheckBox.Location = new System.Drawing.Point(385, 178);
+            this.OutlinecheckBox.Name = "OutlinecheckBox";
+            this.OutlinecheckBox.Size = new System.Drawing.Size(112, 29);
+            this.OutlinecheckBox.TabIndex = 8;
+            this.OutlinecheckBox.Text = "Outline";
+            this.OutlinecheckBox.UseVisualStyleBackColor = true;
+            // 
+            // Fillcheckbox
+            // 
+            this.Fillcheckbox.AutoSize = true;
+            this.Fillcheckbox.Location = new System.Drawing.Point(385, 146);
+            this.Fillcheckbox.Name = "Fillcheckbox";
+            this.Fillcheckbox.Size = new System.Drawing.Size(72, 29);
+            this.Fillcheckbox.TabIndex = 7;
+            this.Fillcheckbox.Text = "Fill";
+            this.Fillcheckbox.UseVisualStyleBackColor = true;
+            // 
+            // PenWidthListBox
+            // 
+            this.PenWidthListBox.FormattingEnabled = true;
+            this.PenWidthListBox.ItemHeight = 25;
+            this.PenWidthListBox.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.PenWidthListBox.Location = new System.Drawing.Point(553, 50);
+            this.PenWidthListBox.Name = "PenWidthListBox";
+            this.PenWidthListBox.Size = new System.Drawing.Size(81, 154);
+            this.PenWidthListBox.TabIndex = 6;
+            // 
+            // FillcolorListbox
+            // 
+            this.FillcolorListbox.FormattingEnabled = true;
+            this.FillcolorListbox.ItemHeight = 25;
+            this.FillcolorListbox.Items.AddRange(new object[] {
+            "White",
+            "Black",
+            "Red",
+            "Blue",
+            "Green"});
+            this.FillcolorListbox.Location = new System.Drawing.Point(432, 49);
+            this.FillcolorListbox.Name = "FillcolorListbox";
+            this.FillcolorListbox.Size = new System.Drawing.Size(74, 79);
+            this.FillcolorListbox.TabIndex = 5;
+            // 
+            // PencolorlistBox
+            // 
+            this.PencolorlistBox.FormattingEnabled = true;
+            this.PencolorlistBox.ItemHeight = 25;
+            this.PencolorlistBox.Items.AddRange(new object[] {
+            "Black",
+            "Red",
+            "Blue",
+            "Green"});
+            this.PencolorlistBox.Location = new System.Drawing.Point(295, 50);
+            this.PencolorlistBox.Name = "PencolorlistBox";
+            this.PencolorlistBox.Size = new System.Drawing.Size(74, 79);
+            this.PencolorlistBox.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(548, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 25);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Pen Width";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(427, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Fill Color";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -136,7 +223,7 @@
             // 
             // Draw_Box
             // 
-            this.Draw_Box.Controls.Add(this.textBox1);
+            this.Draw_Box.Controls.Add(this.textBox);
             this.Draw_Box.Controls.Add(this.TextradioButton);
             this.Draw_Box.Controls.Add(this.EllipseradioButton);
             this.Draw_Box.Controls.Add(this.RectangleradioButton);
@@ -148,15 +235,15 @@
             this.Draw_Box.TabStop = false;
             this.Draw_Box.Text = "Draw";
             // 
-            // textBox1
+            // textBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(46, 110);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(155, 60);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.WordWrap = false;
+            this.textBox.Location = new System.Drawing.Point(46, 110);
+            this.textBox.Multiline = true;
+            this.textBox.Name = "textBox";
+            this.textBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox.Size = new System.Drawing.Size(155, 60);
+            this.textBox.TabIndex = 4;
+            this.textBox.WordWrap = false;
             // 
             // TextradioButton
             // 
@@ -202,15 +289,6 @@
             this.Lineradiobutton.Text = "Line";
             this.Lineradiobutton.UseVisualStyleBackColor = true;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(427, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Fill Color";
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -218,84 +296,6 @@
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(0, 25);
             this.linkLabel1.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(548, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 25);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Pen Width";
-            // 
-            // PencolorlistBox
-            // 
-            this.PencolorlistBox.FormattingEnabled = true;
-            this.PencolorlistBox.ItemHeight = 25;
-            this.PencolorlistBox.Items.AddRange(new object[] {
-            "Black",
-            "Red",
-            "Blue",
-            "Green"});
-            this.PencolorlistBox.Location = new System.Drawing.Point(295, 50);
-            this.PencolorlistBox.Name = "PencolorlistBox";
-            this.PencolorlistBox.Size = new System.Drawing.Size(74, 79);
-            this.PencolorlistBox.TabIndex = 4;
-            // 
-            // FillcolorListbox
-            // 
-            this.FillcolorListbox.FormattingEnabled = true;
-            this.FillcolorListbox.ItemHeight = 25;
-            this.FillcolorListbox.Items.AddRange(new object[] {
-            "White",
-            "Black",
-            "Red",
-            "Blue",
-            "Green"});
-            this.FillcolorListbox.Location = new System.Drawing.Point(432, 49);
-            this.FillcolorListbox.Name = "FillcolorListbox";
-            this.FillcolorListbox.Size = new System.Drawing.Size(74, 79);
-            this.FillcolorListbox.TabIndex = 5;
-            // 
-            // PenWidthListBox
-            // 
-            this.PenWidthListBox.FormattingEnabled = true;
-            this.PenWidthListBox.ItemHeight = 25;
-            this.PenWidthListBox.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.PenWidthListBox.Location = new System.Drawing.Point(553, 50);
-            this.PenWidthListBox.Name = "PenWidthListBox";
-            this.PenWidthListBox.Size = new System.Drawing.Size(81, 154);
-            this.PenWidthListBox.TabIndex = 6;
-            // 
-            // Fillcheckbox
-            // 
-            this.Fillcheckbox.AutoSize = true;
-            this.Fillcheckbox.Location = new System.Drawing.Point(385, 146);
-            this.Fillcheckbox.Name = "Fillcheckbox";
-            this.Fillcheckbox.Size = new System.Drawing.Size(72, 29);
-            this.Fillcheckbox.TabIndex = 7;
-            this.Fillcheckbox.Text = "Fill";
-            this.Fillcheckbox.UseVisualStyleBackColor = true;
-            // 
-            // OutlinecheckBox
-            // 
-            this.OutlinecheckBox.AutoSize = true;
-            this.OutlinecheckBox.Location = new System.Drawing.Point(385, 178);
-            this.OutlinecheckBox.Name = "OutlinecheckBox";
-            this.OutlinecheckBox.Size = new System.Drawing.Size(112, 29);
-            this.OutlinecheckBox.TabIndex = 8;
-            this.OutlinecheckBox.Text = "Outline";
-            this.OutlinecheckBox.UseVisualStyleBackColor = true;
             // 
             // drawpanel
             // 
@@ -345,7 +345,7 @@
         private System.Windows.Forms.RadioButton RectangleradioButton;
         private System.Windows.Forms.RadioButton Lineradiobutton;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox FillcolorListbox;
         private System.Windows.Forms.ListBox PencolorlistBox;

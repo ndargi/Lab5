@@ -74,6 +74,7 @@ namespace Lab5
             SolidBrush mybrush = new SolidBrush(mycolor);
             mycolor = Color.FromName(fillcolor);
             SolidBrush myfillbrush = new SolidBrush(mycolor);
+            string mystring = textBox.Text;
             if (firstclick)
             {
                 //Save the first point to create the object later
@@ -123,6 +124,9 @@ namespace Lab5
                 //Do this if text should be drawn
                 else if(TextradioButton.Checked)
                 {
+                    firstclick = true;
+                    myShape textshape = new Text(savedpoint, mypoint, mybrush, mystring);
+                    shapes.Add(textshape);
 
                 }
             }
