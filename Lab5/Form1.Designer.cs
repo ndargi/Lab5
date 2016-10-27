@@ -47,9 +47,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.PencolorlistBox = new System.Windows.Forms.ListBox();
+            this.FillcolorListbox = new System.Windows.Forms.ListBox();
+            this.PenWidthListBox = new System.Windows.Forms.ListBox();
             this.Fillcheckbox = new System.Windows.Forms.CheckBox();
             this.OutlinecheckBox = new System.Windows.Forms.CheckBox();
             this.drawpanel = new System.Windows.Forms.Panel();
@@ -111,9 +111,9 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Controls.Add(this.OutlinecheckBox);
             this.panel1.Controls.Add(this.Fillcheckbox);
-            this.panel1.Controls.Add(this.listBox3);
-            this.panel1.Controls.Add(this.listBox2);
-            this.panel1.Controls.Add(this.listBox1);
+            this.panel1.Controls.Add(this.PenWidthListBox);
+            this.panel1.Controls.Add(this.FillcolorListbox);
+            this.panel1.Controls.Add(this.PencolorlistBox);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -228,40 +228,40 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Pen Width";
             // 
-            // listBox1
+            // PencolorlistBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Items.AddRange(new object[] {
+            this.PencolorlistBox.FormattingEnabled = true;
+            this.PencolorlistBox.ItemHeight = 25;
+            this.PencolorlistBox.Items.AddRange(new object[] {
             "Black",
-            "Red ",
+            "Red",
             "Blue",
             "Green"});
-            this.listBox1.Location = new System.Drawing.Point(295, 50);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(74, 79);
-            this.listBox1.TabIndex = 4;
+            this.PencolorlistBox.Location = new System.Drawing.Point(295, 50);
+            this.PencolorlistBox.Name = "PencolorlistBox";
+            this.PencolorlistBox.Size = new System.Drawing.Size(74, 79);
+            this.PencolorlistBox.TabIndex = 4;
             // 
-            // listBox2
+            // FillcolorListbox
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 25;
-            this.listBox2.Items.AddRange(new object[] {
+            this.FillcolorListbox.FormattingEnabled = true;
+            this.FillcolorListbox.ItemHeight = 25;
+            this.FillcolorListbox.Items.AddRange(new object[] {
             "White",
             "Black",
             "Red",
             "Blue",
             "Green"});
-            this.listBox2.Location = new System.Drawing.Point(432, 49);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(74, 79);
-            this.listBox2.TabIndex = 5;
+            this.FillcolorListbox.Location = new System.Drawing.Point(432, 49);
+            this.FillcolorListbox.Name = "FillcolorListbox";
+            this.FillcolorListbox.Size = new System.Drawing.Size(74, 79);
+            this.FillcolorListbox.TabIndex = 5;
             // 
-            // listBox3
+            // PenWidthListBox
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 25;
-            this.listBox3.Items.AddRange(new object[] {
+            this.PenWidthListBox.FormattingEnabled = true;
+            this.PenWidthListBox.ItemHeight = 25;
+            this.PenWidthListBox.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -272,10 +272,10 @@
             "8",
             "9",
             "10"});
-            this.listBox3.Location = new System.Drawing.Point(553, 50);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(81, 154);
-            this.listBox3.TabIndex = 6;
+            this.PenWidthListBox.Location = new System.Drawing.Point(553, 50);
+            this.PenWidthListBox.Name = "PenWidthListBox";
+            this.PenWidthListBox.Size = new System.Drawing.Size(81, 154);
+            this.PenWidthListBox.TabIndex = 6;
             // 
             // Fillcheckbox
             // 
@@ -305,6 +305,7 @@
             this.drawpanel.Size = new System.Drawing.Size(674, 279);
             this.drawpanel.TabIndex = 4;
             this.drawpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.drawpanel_Paint);
+            this.drawpanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.drawpanel_MouseClick);
             // 
             // Form1
             // 
@@ -346,12 +347,12 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox FillcolorListbox;
+        private System.Windows.Forms.ListBox PencolorlistBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox PenWidthListBox;
         private System.Windows.Forms.CheckBox OutlinecheckBox;
         private System.Windows.Forms.CheckBox Fillcheckbox;
         private System.Windows.Forms.Panel drawpanel;
