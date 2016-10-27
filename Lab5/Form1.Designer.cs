@@ -66,7 +66,7 @@
             this.editToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(674, 42);
+            this.menuStrip2.Size = new System.Drawing.Size(674, 40);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -76,7 +76,7 @@
             this.clearToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 38);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 36);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // clearToolStripMenuItem
@@ -89,7 +89,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(169, 38);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -98,19 +98,19 @@
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.undoToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(67, 38);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(67, 36);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(173, 38);
             this.undoToolStripMenuItem.Text = "Undo";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel1.Controls.Add(this.OutlinecheckBox);
             this.panel1.Controls.Add(this.Fillcheckbox);
             this.panel1.Controls.Add(this.PenWidthListBox);
@@ -121,7 +121,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Draw_Box);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 42);
+            this.panel1.Location = new System.Drawing.Point(0, 40);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(674, 208);
             this.panel1.TabIndex = 2;
@@ -130,7 +130,7 @@
             // OutlinecheckBox
             // 
             this.OutlinecheckBox.AutoSize = true;
-            this.OutlinecheckBox.Location = new System.Drawing.Point(385, 178);
+            this.OutlinecheckBox.Location = new System.Drawing.Point(370, 163);
             this.OutlinecheckBox.Name = "OutlinecheckBox";
             this.OutlinecheckBox.Size = new System.Drawing.Size(112, 29);
             this.OutlinecheckBox.TabIndex = 8;
@@ -140,7 +140,7 @@
             // Fillcheckbox
             // 
             this.Fillcheckbox.AutoSize = true;
-            this.Fillcheckbox.Location = new System.Drawing.Point(385, 146);
+            this.Fillcheckbox.Location = new System.Drawing.Point(370, 133);
             this.Fillcheckbox.Name = "Fillcheckbox";
             this.Fillcheckbox.Size = new System.Drawing.Size(72, 29);
             this.Fillcheckbox.TabIndex = 7;
@@ -162,9 +162,9 @@
             "8",
             "9",
             "10"});
-            this.PenWidthListBox.Location = new System.Drawing.Point(553, 50);
+            this.PenWidthListBox.Location = new System.Drawing.Point(524, 38);
             this.PenWidthListBox.Name = "PenWidthListBox";
-            this.PenWidthListBox.Size = new System.Drawing.Size(81, 154);
+            this.PenWidthListBox.Size = new System.Drawing.Size(69, 154);
             this.PenWidthListBox.TabIndex = 6;
             // 
             // FillcolorListbox
@@ -177,7 +177,7 @@
             "Red",
             "Blue",
             "Green"});
-            this.FillcolorListbox.Location = new System.Drawing.Point(432, 49);
+            this.FillcolorListbox.Location = new System.Drawing.Point(408, 38);
             this.FillcolorListbox.Name = "FillcolorListbox";
             this.FillcolorListbox.Size = new System.Drawing.Size(74, 79);
             this.FillcolorListbox.TabIndex = 5;
@@ -191,7 +191,7 @@
             "Red",
             "Blue",
             "Green"});
-            this.PencolorlistBox.Location = new System.Drawing.Point(295, 50);
+            this.PencolorlistBox.Location = new System.Drawing.Point(295, 38);
             this.PencolorlistBox.Name = "PencolorlistBox";
             this.PencolorlistBox.Size = new System.Drawing.Size(74, 79);
             this.PencolorlistBox.TabIndex = 4;
@@ -199,7 +199,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(548, 21);
+            this.label3.Location = new System.Drawing.Point(519, 21);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 25);
             this.label3.TabIndex = 3;
@@ -208,7 +208,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(427, 21);
+            this.label2.Location = new System.Drawing.Point(403, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 25);
             this.label2.TabIndex = 2;
@@ -239,11 +239,11 @@
             // 
             // textBox
             // 
-            this.textBox.Location = new System.Drawing.Point(46, 110);
+            this.textBox.Location = new System.Drawing.Point(20, 110);
             this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
             this.textBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox.Size = new System.Drawing.Size(155, 60);
+            this.textBox.Size = new System.Drawing.Size(181, 60);
             this.textBox.TabIndex = 4;
             this.textBox.WordWrap = false;
             // 
@@ -301,7 +301,7 @@
             // 
             // drawpanel
             // 
-            this.drawpanel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.drawpanel.BackColor = System.Drawing.SystemColors.Window;
             this.drawpanel.Location = new System.Drawing.Point(0, 254);
             this.drawpanel.Name = "drawpanel";
             this.drawpanel.Size = new System.Drawing.Size(674, 279);
@@ -319,7 +319,7 @@
             this.Controls.Add(this.menuStrip2);
             this.Name = "Form1";
             this.Tag = "";
-            this.Text = "Lab 5";
+            this.Text = "Lab 5 - Nicholas Dargi";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.menuStrip2.ResumeLayout(false);

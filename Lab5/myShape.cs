@@ -158,7 +158,7 @@ namespace Lab5
             }
             SizeF mysize = new SizeF(point2.X - point1.X, point2.Y - point1.Y);
             RectangleF myrect = new RectangleF(point1, mysize);
-            Font myfont = new Font("Times New Roman", 10);
+            Font myfont = new Font("Ariel", 8);
             g.DrawString(mystring, myfont, BrushColor, myrect);
         }
     }
