@@ -42,7 +42,8 @@ namespace Lab5
 
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            shapes.Clear();
+            drawpanel.Invalidate();
         }
 
         private void drawpanel_Paint(object sender, PaintEventArgs e)
@@ -133,6 +134,15 @@ namespace Lab5
             drawpanel.Invalidate();
         }
 
-        
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            shapes.RemoveAt(shapes.Count - 1);
+            drawpanel.Invalidate();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
