@@ -85,6 +85,7 @@ namespace Lab5
                 //Do this if rectangle should be drawn
                 if(RectangleradioButton.Checked)
                 {
+                    firstclick = true;
                     if (OutlinecheckBox.Checked)
                     {
                         if (Fillcheckbox.Checked)
@@ -93,14 +94,13 @@ namespace Lab5
                         }
                         myShape rectangleshape = new Rectangle(savedpoint, mypoint, mybrush, fill, myfillbrush, penwidth);
                         shapes.Add(rectangleshape);
-                        firstclick = true;
+                        
                     }       
                 }
                 //Do this if line should be drawn
                 else if(Lineradiobutton.Checked)
                 {
-                                      
-                    
+                                       
                     myShape lineshape = new Line(savedpoint, mypoint, mybrush, penwidth);
                     shapes.Add(lineshape);
                     firstclick = true;
@@ -108,7 +108,17 @@ namespace Lab5
                 //Do this if Ellipse should be drawn
                 else if(EllipseradioButton.Checked)
                 {
+                    firstclick = true;
+                    if (OutlinecheckBox.Checked)
+                    {
+                        if (Fillcheckbox.Checked)
+                        {
+                            fill = true;
+                        }
+                        myShape ellipseshape = new Ellipse(savedpoint, mypoint, mybrush, fill, myfillbrush, penwidth);
+                        shapes.Add(ellipseshape);
 
+                    }
                 }
                 //Do this if text should be drawn
                 else if(TextradioButton.Checked)
