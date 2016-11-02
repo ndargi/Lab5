@@ -164,7 +164,7 @@
             "10"});
             this.PenWidthListBox.Location = new System.Drawing.Point(524, 38);
             this.PenWidthListBox.Name = "PenWidthListBox";
-            this.PenWidthListBox.Size = new System.Drawing.Size(69, 154);
+            this.PenWidthListBox.Size = new System.Drawing.Size(106, 154);
             this.PenWidthListBox.TabIndex = 6;
             // 
             // FillcolorListbox

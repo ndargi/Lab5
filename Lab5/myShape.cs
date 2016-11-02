@@ -16,7 +16,7 @@ namespace Lab5
         {
         }
     
-
+        //Below is the Draw Function which accepts a Graphics argument
         public virtual void Draw(Graphics g)
         {
 
@@ -25,6 +25,8 @@ namespace Lab5
 
 
     }
+    //Below is the Line derived class of myShape, the line constructor accepts 2 points, a brush and a pen width
+    //the override Draw method is used to drawthe line at the specified points in the Panel
     public class Line : myShape
     {
         Point point1;
@@ -47,6 +49,8 @@ namespace Lab5
         }
 
     }
+    //Below is the Rectangle derived class of myShape, the rectangle constructor accepts 2 points, a brush, whether fill is checked, the fillcolor and the penwidth
+    //the override Draw method is used to drawthe Rectangle at the specified points in the Panel, and format it appropriately
     public class Rectangle : myShape
     {
         Point point1;
@@ -88,6 +92,8 @@ namespace Lab5
            
         }
     }
+    //Below is the Ellipse derived class of myShape, the rectangle constructor accepts 2 points, a brush, whether fill is checked, the fillcolor and the penwidth
+    //the override Draw method is used to draw the Ellipse at the specified points in the Panel, and format it appropriately
     public class Ellipse : myShape
     {
         Point point1;
@@ -129,6 +135,8 @@ namespace Lab5
         }
         
     }
+    //Below is the Text derived class of myShape, the rectangle constructor accepts 2 points, a brush,and the string to be drawn
+    //the override Draw method is used to drawthe text at the specified points in the Panel, and format it appropriately
     public class Text : myShape
     {
         Point point1;

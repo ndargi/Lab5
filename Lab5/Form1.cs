@@ -15,8 +15,8 @@ namespace Lab5
         
     {
         private List<myShape> shapes = new List<myShape>();
-        private bool firstclick = true;
-        private Point savedpoint = new Point();
+        private bool firstclick = true; //True if the next click will be the first click, false otherwise
+        private Point savedpoint = new Point();//first point that is clicked that needs to be saved
         public Graphics myGraphic;
         public Form1()
         {
@@ -25,7 +25,7 @@ namespace Lab5
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //This will be for Lab5
+            //Sets the Initial Selected Index's for the Lists 
             PencolorlistBox.SelectedIndex = 0;
             PenWidthListBox.SelectedIndex = 0;
             FillcolorListbox.SelectedIndex = 0;
@@ -33,6 +33,7 @@ namespace Lab5
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+            //Changes the Size of the panel if the window is resized, designed to work the same way as the example
             panel1.Width = ClientRectangle.Width;
             drawpanel.Location = new System.Drawing.Point(0,23+panel1.Height);
             drawpanel.Width = ClientRectangle.Width;
@@ -40,14 +41,14 @@ namespace Lab5
             
         }
 
-        private void clearToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clearToolStripMenuItem_Click(object sender, EventArgs e) //Method to clear all of the objects
         {
             shapes.Clear();
             drawpanel.Invalidate();
             firstclick = true;
         }
 
-        private void drawpanel_Paint(object sender, PaintEventArgs e)
+        private void drawpanel_Paint(object sender, PaintEventArgs e)//Paint Method for the drawing panel, contains the foreach loop as is specified in the assignment
         {
             myGraphic = e.Graphics;
 
@@ -55,14 +56,11 @@ namespace Lab5
             {
                 s.Draw(myGraphic); 
             }
-            //Below is how to draw a line commented out because some of the variables have been removed
-            //myShape firstshape = new Line(point1, point2, Brushes.Blue, myfloat, mygraphic);
-            //firstshape.Draw(firstshape);
         }
 
-        private void drawpanel_MouseClick(object sender, MouseEventArgs e)
+        private void drawpanel_MouseClick(object sender, MouseEventArgs e)//The click method for the drawing panel
         {
-            
+            //Starts by getting all the user entered parameters
             Point mypoint = new Point(e.X, e.Y);
             string pencolor;
             string fillcolor;
@@ -83,7 +81,7 @@ namespace Lab5
                 savedpoint = mypoint;
                 firstclick = false;
             }
-            else
+            else//Sees what object to create, then creates the object and saves it to the List
             {
                 //Do this if rectangle should be drawn
                 if(RectangleradioButton.Checked)
@@ -135,7 +133,7 @@ namespace Lab5
             drawpanel.Invalidate();
         }
 
-        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)//Undo the last Shape, does not error is there are no shapes drawn
         {
             if (shapes.Count > 0)
             {
@@ -145,7 +143,7 @@ namespace Lab5
             firstclick = true;
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)//Closes out the Program
         {
             this.Close();
         }
